@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Hobbies",
+    "description": "Here are some descriptions",
+    "lastUpdated": "06-07-2025"
+  },
+  "main": {},
+  "history": [
+    {
+      "year": "2025",
+      "url": "",
+      "text": "",
+      "date": "",
+      "location": "",
+      "photos": [
+        "https://dummyimage.com/1200x800/eeeeee/111.jpg&text=2025+Photo+1",
+        "https://dummyimage.com/900x1200/eeeeee/111.jpg&text=2025+Photo+2",
+        "https://dummyimage.com/1200x3200/eeeeee/111.jpg&text=2025+Photo+3",
+        "https://dummyimage.com/1100x900/eeeeee/111.jpg&text=2025+Photo+4",
+        "https://dummyimage.com/1500x2000/eeeeee/111.jpg&text=2025+Photo+5",
+        "https://dummyimage.com/1100x900/eeeeee/111.jpg&text=2025+Photo+6",
+        "https://dummyimage.com/1200x1200/eeeeee/111.jpg&text=2025+Photo+7",
+        "https://dummyimage.com/1200x900/eeeeee/111.jpg&text=2025+Photo+8",
+        "https://dummyimage.com/2400x900/eeeeee/111.jpg&text=2025+Photo+9"
+      ]
+    },
+    {
+      "year": "2024",
+      "url": "/assets/group_photo/2024.jpeg",
+      "text": "Highlights from our 2023 activities. Highlights from our 2023 activities. Highlights from our 2023 activities. Highlights from our 2023 activities. Highlights from our 2023 activities. Highlights from our 2023 activities.",
+      "date": "June 2023",
+      "location": "Imperial College London",
+      "photos": [
+        "/assets/group_photo/2024.jpeg",
+        "/assets/group_photo/2024-2.jpeg",
+        "https://dummyimage.com/1200x760/eeeeee/111.jpg&text=2023+Photo+3",
+        "https://dummyimage.com/1100x880/eeeeee/111.jpg&text=2023+Photo+4",
+        "/assets/group_photo/DSC03362.JPG"
+      ]
+    },
+    {
+      "year": "2022",
+      "url": "https://dummyimage.com/1600x900/eeeeee/111.jpg&text=2022+Cover",
+      "text": "2022 group moments.",
+      "date": "May 2022",
+      "location": "Imperial College London",
+      "photos": []
+    },
+    {
+      "year": "2021",
+      "url": "",
+      "text": "",
+      "date": "",
+      "location": "",
+      "photos": [
+        "https://dummyimage.com/1200x860/eeeeee/111.jpg&text=2021+Photo+1",
+        "https://dummyimage.com/920x1260/eeeeee/111.jpg&text=2021+Photo+2",
+        "https://dummyimage.com/1200x720/eeeeee/111.jpg&text=2021+Photo+3",
+        "https://dummyimage.com/1100x840/eeeeee/111.jpg&text=2021+Photo+4"
+      ]
+    }
+  ],
+  "description": "Here are some descriptions",
+  "currentYearPhotos": [],
+  "albums": []
+}

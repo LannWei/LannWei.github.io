@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "title": "Lan Wei",
+    "subtitle": "Some description",
+    "lastUpdated": "26-11-2025"
+  },
+  "sections": {
+    "hero": {
+      "title": "Lan Wei",
+      "primaryButton": "Explore Research",
+      "secondaryButton": "Meet Our Team",
+      "description": "I am a PhD student at the <a href=\"https://www.intelligentrobotics-acrossscales.com\" target=\"_blank\">Multi-Scale Embodied Intelligence Lab</a >, Imperial College London, supervised by <a href=\"https://scholar.google.com/citations?hl=en&user=233I39oAAAAJ&view_op=list_works&sortby=pubdate\" target=\"_blank\">Dr Dandan Zhang</a >. My current research focuses on diffusion-based sim-to-real image generation and efficient vision–language–action models to enable reliable, data-efficient robot perception and control, particularly for visuo-tactile interaction and biomedical robotics. <br><br> I received my M.E. degree in Computer Science from the University of Science and Technology of China in 2024, after I obtained my B.E. degree in Computer Science from Xiamen University in 2021."
+    },
+    "latestnews": {
+      "subsections": [
+        {
+          "name": "News Item",
+          "data": {
+            "date": "08/2025",
+            "summary": "Happy to got the IROS 2025 IEEE RAS Travel Support with the amount of $1500 USD.",
+            "<!-- links": "[\"PDF: https://arxiv.org/abs/2407.12345\", \"Code: https://github.com/euroai-lab/efficient-attention\"] -->"
+          }
+        },
+        {
+          "name": "News Item",
+          "data": {
+            "date": "08/2025",
+            "summary": "One paper is accepted at the IEEE International Conference on Cyborg and Bionic Systems (CBS 2025), and nominated for the Best Paper.",
+            "links": [
+              "PDF: https://arxiv.org/pdf/2509.02343"
+            ]
+          }
+        },
+        {
+          "name": "News Item",
+          "data": {
+            "date": "07/2025",
+            "summary": "Our paper won the Best Student Paper with the highest score at MARSS 2025."
+          }
+        },
+        {
+          "name": "News Item",
+          "data": {
+            "date": "06/2025",
+            "summary": "Our paper on patch clamp multi-pipette localisation is accepted at IROS’2025.",
+            "links": [
+              "PDF: https://arxiv.org/pdf/2504.01044?"
+            ]
+          }
+        },
+        {
+          "name": "News Item",
+          "data": {
+            "date": "04/2025",
+            "summary": "Our paper about Microrobots Dataset is accepted at MARSS’2025, and nominated for the Best Paper.",
+            "links": [
+              "PDF: https://arxiv.org/pdf/2505.18303",
+              "Code: https://lannwei.github.io/Optical-Microrobot-Database/"
+            ]
+          }
+        },
+        {
+          "name": "News Item",
+          "data": {
+            "date": "10/2024",
+            "summary": "I joined Imperial College London as a PhD student (full scholarship).",
+            "<!-- links": "[\"PDF: https://arxiv.org/abs/2407.12345\", \"Code: https://github.com/euroai-lab/efficient-attention\"] -->"
+          }
+        },
+        {
+          "name": "News Item",
+          "data": {
+            "date": "07/2024",
+            "summary": "I successfully graduated from the University of Science and Technology of China!"
+          }
+        }
+      ]
+    },
+    "award": {
+      "lists": [
+        "IROS 2025 IEEE RAS Travel Support with the amount of $1500 USD.",
+        "The Best Student Paper with the highest score at MARSS 2025.",
+        "4-year Full PhD scholarship, Imperial College London, 2024-2028",
+        "First-class Scholarship, University of Science and Technology of China (2020-2021, 2021-2022 and 2022-2023)",
+        "National First Prize in the 11th China Adolescents Science and Technology Innovation Contest",
+        "First-class Scholarship, Xiamen University (3%, 2019-2020)",
+        "Second-class Scholarship, Xiamen University (10%, 2018-2019)",
+        "The Highest score in Malaysia, Simon Marais Asia-Pacific Mathematics Competition (2018.10)"
+      ]
+    },
+    "contactinformation": {
+      "subsections": [
+        {
+          "name": "Contact Details",
+          "data": {
+            "email": "l dot wei24 at imperial dot ac dot uk",
+            "address": "Translation & Innovation Hub (I-Hub), White City Campus, Imperial College London, W12 7TA"
+          }
+        }
+      ]
+    }
+  }
+}
