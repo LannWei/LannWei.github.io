@@ -56,8 +56,7 @@
         "Dandan Zhang"
       ],
       "keywords": [
-        "Microrobot",
-        "PINN"
+        "Best Bionic System Award Finalist"
       ],
       "links": [
         {
@@ -81,8 +80,7 @@
         "Dandan Zhang"
       ],
       "keywords": [
-        "Microrobot",
-        "Dataset"
+        "Best Student Paper Award"
       ],
       "links": [
         {
@@ -96,6 +94,60 @@
         {
           "type": "Project",
           "url": "https://lannwei.github.io/Optical-Microrobot-Database/"
+        }
+      ],
+      "body": ""
+    },
+    {
+      "title": "Synergistic Patch Pruning for Vision Transformer: Unifying Intra-& Inter-Layer Patch Importance",
+      "year": "2024",
+      "type": "Conference Paper",
+      "venue": "ICLR",
+      "authors": [
+        "Yuyao Zhang",
+        "Lan Wei",
+        "Nikolaos Freris"
+      ],
+      "keywords": [
+        "Efficient Learning",
+        "Model Compression"
+      ],
+      "links": [
+        {
+          "type": "PDF",
+          "url": "https://openreview.net/pdf?id=COO51g41Q4"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/LannWei/STAR_ICLR"
+        }
+      ],
+      "body": ""
+    },
+    {
+      "title": "Boundary-Aware Transformers for Skin Lesion Segmentation",
+      "year": "2021",
+      "type": "Conference Paper",
+      "venue": "MICCAI",
+      "authors": [
+        "Jiacheng Wang*",
+        "Lan Wei*",
+        "Liansheng Wang",
+        "Qichao Zhou",
+        "Lei Zhu",
+        "Jing Qin"
+      ],
+      "keywords": [
+        "230+ Citations on Google Scholar"
+      ],
+      "links": [
+        {
+          "type": "PDF",
+          "url": "https://openreview.net/pdf?id=COO51g41Q4"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/LannWei/STAR_ICLR"
         }
       ],
       "body": ""

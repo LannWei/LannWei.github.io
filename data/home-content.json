@@ -17,7 +17,7 @@
           "name": "News Item",
           "data": {
             "date": "08/2025",
-            "summary": "Happy to got the IROS 2025 IEEE RAS Travel Support with the amount of $1500 USD.",
+            "summary": "Happy to got the IROS 2025 IEEE RAS Travel Support Award with the amount of $1500 USD.",
             "<!-- links": "[\"PDF: https://arxiv.org/abs/2407.12345\", \"Code: https://github.com/euroai-lab/efficient-attention\"] -->"
           }
         },
@@ -25,7 +25,7 @@
           "name": "News Item",
           "data": {
             "date": "08/2025",
-            "summary": "One paper is accepted at the IEEE International Conference on Cyborg and Bionic Systems (CBS 2025), and nominated for the Best Paper.",
+            "summary": "One paper is accepted at the IEEE International Conference on Cyborg and Bionic Systems (CBS 2025), and nominated for the Best Paper Award.",
             "links": [
               "PDF: https://arxiv.org/pdf/2509.02343"
             ]
@@ -35,7 +35,7 @@
           "name": "News Item",
           "data": {
             "date": "07/2025",
-            "summary": "Our paper won the Best Student Paper with the highest score at MARSS 2025."
+            "summary": "Our paper won the Best Student Paper Award with the highest score at MARSS 2025."
           }
         },
         {
@@ -52,7 +52,7 @@
           "name": "News Item",
           "data": {
             "date": "04/2025",
-            "summary": "Our paper about Microrobots Dataset is accepted at MARSS’2025, and nominated for the Best Paper.",
+            "summary": "Our paper about Microrobots Dataset is accepted at MARSS’2025, and nominated for the Best Paper Award.",
             "links": [
               "PDF: https://arxiv.org/pdf/2505.18303",
               "Code: https://lannwei.github.io/Optical-Microrobot-Database/"
