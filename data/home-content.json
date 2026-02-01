@@ -16,6 +16,13 @@
         {
           "name": "News Item",
           "data": {
+            "date": "01/2026",
+            "summary": "Four papers are accepted at ICRA’2026."
+          }
+        },
+        {
+          "name": "News Item",
+          "data": {
             "date": "08/2025",
             "summary": "Happy to got the IROS 2025 IEEE RAS Travel Support Award with the amount of $1500 USD.",
             "<!-- links": "[\"PDF: https://arxiv.org/abs/2407.12345\", \"Code: https://github.com/euroai-lab/efficient-attention\"] -->"

@@ -1,12 +1,87 @@
 {
   "metadata": {
     "title": "Publications",
-    "description": "For a full list of my publications, please refer to my <a href='https://scholar.google.com/citations?user=DOkab9UAAAAJ&hl=en' target='_blank'>Google Scholar profile</a>.",
+    "description": "For a full list of my publications, please refer to my <a href='https://scholar.google.com/citations?user=DOkab9UAAAAJ&hl=en' target='_blank'>Google Scholar profile</a>. (*Equal Contribution)",
     "lastUpdated": "06-07-2025"
   },
   "sections": [
     {
       "title": "# Publications",
+      "body": ""
+    },
+    {
+      "title": "TactEx: An Explainable Multimodal Robotic Interaction Framework for Human-Like Touch and Hardness Estimation",
+      "year": "2026",
+      "type": "Conference Paper",
+      "venue": "IEEE ICRA 2026",
+      "authors": [
+        "Felix Verstraete*",
+        "Lan Wei*",
+        "Wen Fan*",
+        "Dandan Zhang"
+      ],
+      "keywords": [
+        "Vision Tactile Language Model"
+      ],
+      "body": ""
+    },
+    {
+      "title": "MultiDiffSense: Diffusion-Based Multi-Modal Visuo-Tactile Image Generation Conditioned on Object Shape and Contact Pose",
+      "year": "2026",
+      "type": "Conference Paper",
+      "venue": "IEEE ICRA 2026",
+      "authors": [
+        "Sirine Bhouri*",
+        "Lan Wei*",
+        "Jian-Qing Zheng",
+        "Dandan Zhang"
+      ],
+      "keywords": [
+        "Diffusion-Based Visuo-Tactile Image Generation"
+      ],
+      "body": ""
+    },
+    {
+      "title": "SARL: Spatially-Aware Self-Supervised Representation Learning for Visuo-Tactile Perception",
+      "year": "2026",
+      "type": "Conference Paper",
+      "venue": "IEEE ICRA 2026",
+      "authors": [
+        "Gurmeher Khurana*",
+        "Lan Wei*",
+        "Dandan Zhang"
+      ],
+      "keywords": [
+        "Self-supervised Learning",
+        "Representation Learning"
+      ],
+      "links": [
+        {
+          "type": "PDF",
+          "url": "https://arxiv.org/pdf/2512.01908?"
+        }
+      ],
+      "body": ""
+    },
+    {
+      "title": "Physics-Informed Machine Learning for Efficient Sim-to-Real Data Augmentation in Micro-Object Pose Estimation",
+      "year": "2026",
+      "type": "Conference Paper",
+      "venue": "IEEE ICRA 2026",
+      "authors": [
+        "Tan Zongcai*",
+        "Lan Wei*",
+        "Dandan Zhang"
+      ],
+      "keywords": [
+        "Sim-to-Real Data Augmentation"
+      ],
+      "links": [
+        {
+          "type": "PDF",
+          "url": "https://arxiv.org/pdf/2511.16494?"
+        }
+      ],
       "body": ""
     },
     {
