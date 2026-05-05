@@ -10,6 +10,68 @@
       "body": ""
     },
     {
+      "title": "Stop the Flip-Flop: Context-Preserving Verification for Fast Revocable Diffusion Decoding",
+      "year": "2026",
+      "type": "Conference Paper",
+      "venue": "ICML 2026",
+      "authors": [
+        "Yanzheng Xiang*",
+        "Lan Wei*",
+        "Yizhen Yao",
+        "Qinglin Zhu",
+        "Hanqi Yan",
+        "Chen Jin",
+        "Philip Alexander Teare",
+        "Dandan Zhang",
+        "Lin Gui",
+        "Amrutha Saseendran",
+        "Yulan He"
+      ],
+      "keywords": [
+        "Diffusion Acceleration"
+      ],
+      "links": [
+        {
+          "type": "PDF",
+          "url": "https://arxiv.org/pdf/2602.06161"
+        }
+      ],
+      "body": ""
+    },
+    {
+      "title": "Mag-VLA: Vision-Language-Action Model for Bimanual Magnetically Actuated Microrobot Manipulation",
+      "year": "2026",
+      "type": "Conference Paper",
+      "venue": "IEEE MARSS 2026",
+      "authors": [
+        "Yongchen Wang",
+        "Kangyi Lu",
+        "Lan Wei",
+        "Dandan Zhang"
+      ],
+      "keywords": [
+        "VLA",
+        "Microrobot Manipulation"
+      ],
+      "body": ""
+    },
+    {
+      "title": "A Digital Twin Framework for Virtual Visuo-Haptic Teleoperation of Complex-Shaped Optical Microrobots.",
+      "year": "2026",
+      "type": "Conference Paper",
+      "venue": "IEEE MARSS 2026",
+      "authors": [
+        "Zongcai Tan",
+        "Lan Wei",
+        "Dandan Zhang"
+      ],
+      "keywords": [
+        "Digital Twin",
+        "Optical Microrobot"
+      ],
+      "body": ""
+    },
+    {
       "title": "TactEx: An Explainable Multimodal Robotic Interaction Framework for Human-Like Touch and Hardness Estimation",
       "year": "2026",
       "type": "Conference Paper",
@@ -22,6 +84,12 @@
       ],
       "keywords": [
         "Vision Tactile Language Model"
+      ],
+      "links": [
+        {
+          "type": "PDF",
+          "url": "https://arxiv.org/pdf/2602.18967"
+        }
       ],
       "body": ""
     },
@@ -38,6 +106,16 @@
       ],
       "keywords": [
         "Diffusion-Based Visuo-Tactile Image Generation"
+      ],
+      "links": [
+        {
+          "type": "PDF",
+          "url": "https://arxiv.org/pdf/2602.19348"
+        },
+        {
+          "type": "Code",
+          "url": "https://github.com/sirine-b/MultiDiffSense"
+        }
       ],
       "body": ""
     },
