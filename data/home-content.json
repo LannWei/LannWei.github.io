@@ -9,7 +9,7 @@
       "title": "Lan Wei",
       "primaryButton": "Explore Research",
       "secondaryButton": "Meet Our Team",
-      "description": "I am a PhD student in the <a href=\"https://www.intelligentrobotics-acrossscales.com\" target=\"_blank\">Multi-Scale Embodied Intelligence Lab</a> at Imperial College London, advised by <a href=\"https://scholar.google.com/citations?hl=en&user=233I39oAAAAJ&view_op=list_works&sortby=pubdate\" target=\"_blank\">Dr. Dandan Zhang</a>. My research focuses on diffusion-based sim-to-real image generation and efficient vision–language–action (VLA) models, with the goal of enabling reliable and data-efficient robot perception and control.<br><br>Previously, I earned my M.E. in Computer Science from the University of Science and Technology of China (USTC) in 2024, and my B.E. in Computer Science from Xiamen University in 2021."
+      "description": "I am a PhD student in the <a href=\"https://www.intelligentrobotics-acrossscales.com\" target=\"_blank\">Multi-Scale Embodied Intelligence Lab</a> at Imperial College London, advised by <a href=\"https://scholar.google.com/citations?hl=en&user=233I39oAAAAJ&view_op=list_works&sortby=pubdate\" target=\"_blank\">Dr. Dandan Zhang</a>. My research focuses on efficient robot learning and self-improving agents for generalisable robot manipulation, with the goal of enabling reliable and data-efficient robot perception and control.<br><br>Previously, I earned my M.E. in Computer Science from the University of Science and Technology of China (USTC) in 2024, and my B.E. in Computer Science from Xiamen University in 2021."
     },
     "latestnews": {
       "subsections": [
