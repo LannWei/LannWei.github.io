@@ -16,6 +16,13 @@
         {
           "name": "News Item",
           "data": {
+            "date": "06/2026",
+            "summary": "Three papers has been accepted to IROS 2026. Thanks all collaborators!"
+          }
+        },
+        {
+          "name": "News Item",
+          "data": {
             "date": "05/2026",
             "summary": "One paper on diffusion model acceleration has been accepted to ICML 2026 (Acceptance rate: 26.6%).",
             "links": [
