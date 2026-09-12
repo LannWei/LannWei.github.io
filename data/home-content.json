@@ -9,22 +9,49 @@
       "title": "Lan Wei",
       "primaryButton": "Explore Research",
       "secondaryButton": "Meet Our Team",
-      "description": "I am a PhD student in the <a href=\"https://www.intelligentrobotics-acrossscales.com\" target=\"_blank\">Multi-Scale Embodied Intelligence Lab</a> at Imperial College London, advised by <a href=\"https://scholar.google.com/citations?hl=en&user=233I39oAAAAJ&view_op=list_works&sortby=pubdate\" target=\"_blank\">Dr. Dandan Zhang</a>. My research focuses on efficient robot learning and self-improving agents for generalisable robot manipulation, with the goal of enabling reliable and data-efficient robot perception and control.<br><br>Previously, I earned my M.E. in Computer Science from the University of Science and Technology of China (USTC) in 2024, and my B.E. in Computer Science from Xiamen University in 2021."
+      "description": "I am a PhD student in Robotics at Imperial College London, advised by <a href='https://scholar.google.com/citations?hl=en&amp;user=233I39oAAAAJ&amp;view_op=list_works&amp;sortby=pubdate' target='_blank' rel='noopener noreferrer'>Dr Dandan Zhang</a>. My research focuses on Embodied AI, with particular interests in physics-grounded multimodal world models, visuo-tactile perception, sim-to-real learning, efficient vision-language-action models, and fast diffusion inference. I am particularly interested in building physically grounded and computationally efficient AI systems that can perceive, reason about, and interact with the real world. Before joining Imperial, I received my M.Eng. in Computer Science and Technology from the University of Science and Technology of China (USTC) and my B.Eng. from Xiamen University."
     },
     "latestnews": {
       "subsections": [
         {
           "name": "News Item",
           "data": {
+            "date": "09/2026",
+            "summary": "Co-organized two workshops on <strong>safe and physical world models for embodied AI</strong> at <a href='https://trustworthy-world-models.github.io/ECCV2026/' target='_blank' rel='noopener noreferrer' class='link-primary'>ECCV 2026</a> and <a href='https://physical-world-models.github.io/IROS2026/' target='_blank' rel='noopener noreferrer' class='link-primary'>IROS 2026</a>. Thanks to all organizers, speakers, and participants!"
+          }
+        },
+        {
+          "name": "News Item",
+          "data": {
+            "date": "09/2026",
+            "summary": "Our work on <strong>safe and trustworthy robotic manipulation with constrained multimodal LLMs</strong> was selected for an oral presentation at the IROS 2026 PWMS Workshop."
+          }
+        },
+        {
+          "name": "News Item",
+          "data": {
+            "date": "09/2026",
+            "summary": "Our <strong>TacVerse</strong> paper on cross-sensor vision-based tactile perception was accepted to <em>Advanced Robotics Research</em>. Thanks to all collaborators!",
+            "links": [
+              "PDF: https://arxiv.org/pdf/2606.25877",
+              "Data: https://huggingface.co/datasets/Lan-2025/Tactile",
+              "Code: https://github.com/LannWei/Tactile_Database",
+              "Website: https://lannwei.github.io/Tactile_Database/"
+            ]
+          }
+        },
+        {
+          "name": "News Item",
+          "data": {
             "date": "06/2026",
-            "summary": "Three papers has been accepted to IROS 2026. Thanks all collaborators!"
+            "summary": "Three papers were accepted to IROS 2026. Thanks to all collaborators!"
           }
         },
         {
           "name": "News Item",
           "data": {
             "date": "05/2026",
-            "summary": "One paper on diffusion model acceleration has been accepted to ICML 2026 (Acceptance rate: 26.6%).",
+            "summary": "Our paper on <strong>fast diffusion model decoding</strong> was accepted to ICML 2026 (acceptance rate: 26.6%).",
             "links": [
               "PDF: https://arxiv.org/pdf/2602.06161"
             ]
@@ -34,36 +61,35 @@
           "name": "News Item",
           "data": {
             "date": "04/2026",
-            "summary": "Two papers have been accepted to MARSS 2026."
+            "summary": "Two papers were accepted to MARSS 2026."
           }
         },
         {
           "name": "News Item",
           "data": {
             "date": "03/2026",
-            "summary": "Honored to receive the 2026 Early Career Development Grant from the Imperial I-X Women in AI Network (IX-WAI)."
+            "summary": "Honored to receive the <strong>2026 Early Career Development Grant</strong> from the Imperial I-X Women in AI Network (IX-WAI)."
           }
         },
         {
           "name": "News Item",
           "data": {
             "date": "01/2026",
-            "summary": "Congratulations to the Master's students I co-supervise with Dr Dandan Zhang on having four papers accepted to ICRA 2026."
+            "summary": "Congratulations to the Master's students I co-supervise with Dr Dandan Zhang on having four papers accepted to ICRA 2026!"
           }
         },
         {
           "name": "News Item",
           "data": {
             "date": "08/2025",
-            "summary": "Happy to got the IROS 2025 IEEE RAS Travel Support Award with the amount of $1500 USD.",
-            "<!-- links": "[\"PDF: https://arxiv.org/abs/2407.12345\", \"Code: https://github.com/euroai-lab/efficient-attention\"] -->"
+            "summary": "Happy to receive the <strong>IROS 2025 IEEE RAS Travel Support Award</strong>, with a travel grant of $1,500."
           }
         },
         {
           "name": "News Item",
           "data": {
             "date": "08/2025",
-            "summary": "One paper is accepted at the IEEE International Conference on Cyborg and Bionic Systems (CBS 2025), and nominated for the Best Paper Award.",
+            "summary": "Our paper on <strong>physics-informed optical microrobot depth estimation</strong> was accepted to IEEE CBS 2025 and selected as a <strong>Best Bionic System Award Finalist</strong>.",
             "links": [
               "PDF: https://arxiv.org/pdf/2509.02343"
             ]
@@ -73,16 +99,16 @@
           "name": "News Item",
           "data": {
             "date": "07/2025",
-            "summary": "Our paper won the Best Student Paper Award with the highest score at MARSS 2025."
+            "summary": "Our paper on <strong>optical microrobot pose and depth perception</strong> won the <strong>Best Student Paper Award</strong> with the highest score at MARSS 2025!"
           }
         },
         {
           "name": "News Item",
           "data": {
             "date": "06/2025",
-            "summary": "Our paper on patch clamp multi-pipette localisation is accepted at IROS’2025.",
+            "summary": "Our paper on <strong>multi-pipette localization for robot-assisted patch-clamp</strong> was accepted to IROS 2025.",
             "links": [
-              "PDF: https://arxiv.org/pdf/2504.01044?"
+              "PDF: https://arxiv.org/pdf/2504.01044"
             ]
           }
         },
@@ -90,7 +116,7 @@
           "name": "News Item",
           "data": {
             "date": "04/2025",
-            "summary": "Our paper about Microrobots Dataset is accepted at MARSS’2025, and nominated for the Best Paper Award.",
+            "summary": "Our paper introducing a <strong>dataset and benchmarks for optical microrobot pose and depth perception</strong> was accepted to MARSS 2025.",
             "links": [
               "PDF: https://arxiv.org/pdf/2505.18303",
               "Code: https://lannwei.github.io/Optical-Microrobot-Database/"
@@ -101,15 +127,14 @@
           "name": "News Item",
           "data": {
             "date": "10/2024",
-            "summary": "I joined Imperial College London as a PhD student (full scholarship).",
-            "<!-- links": "[\"PDF: https://arxiv.org/abs/2407.12345\", \"Code: https://github.com/euroai-lab/efficient-attention\"] -->"
+            "summary": "I joined <strong>Imperial College London</strong> as a fully funded PhD student in Robotics."
           }
         },
         {
           "name": "News Item",
           "data": {
             "date": "07/2024",
-            "summary": "I successfully graduated from the University of Science and Technology of China!"
+            "summary": "I graduated from the <strong>University of Science and Technology of China (USTC)</strong> with an M.Eng. in Computer Science and Technology."
           }
         }
       ]
