@@ -12,6 +12,7 @@ import json
 import logging
 import os
 import re
+import signal
 import sys
 import urllib.request
 from datetime import datetime, timezone
@@ -67,14 +68,32 @@ def from_scholarly():
     }
 
 
+class AttemptTimeout(Exception):
+    pass
+
+
+def _on_alarm(signum, frame):
+    raise AttemptTimeout("gave up after the time limit")
+
+
+# scholarly keeps retrying forever when Scholar shows a captcha, so every
+# attempt gets a hard wall-clock limit (seconds).
+ATTEMPTS = ((from_profile_page, 45), (from_scholarly, 100))
+
 summary = None
-for fetch in (from_profile_page, from_scholarly):
+signal.signal(signal.SIGALRM, _on_alarm)
+for fetch, limit in ATTEMPTS:
+    logging.info("Trying %s (limit %ss)", fetch.__name__, limit)
+    signal.alarm(limit)
     try:
-        logging.info("Trying %s", fetch.__name__)
         summary = fetch()
         break
-    except Exception as e:  # blocked, captcha, network error...
+    except BaseException as e:  # blocked, captcha, network error, time limit...
+        if isinstance(e, KeyboardInterrupt):
+            raise
         logging.warning("%s failed: %s", fetch.__name__, e)
+    finally:
+        signal.alarm(0)
 
 if summary is None:
     logging.warning("Google Scholar blocked every attempt; keeping the previous badge value.")
