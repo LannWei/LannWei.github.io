@@ -31,13 +31,16 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r google_scholar_crawler/requirements.txt
       - name: Fetch citation data
+        id: fetch
         working-directory: google_scholar_crawler
-        # scholarly can retry blocked requests for a long time; bound it.
-        timeout-minutes: 5
+        # Google Scholar often blocks CI runners; the script then exits cleanly
+        # with ok=false and the badge keeps its last value.
+        timeout-minutes: 4
         run: python -u main.py
         env:
           GOOGLE_SCHOLAR_ID: DOkab9UAAAAJ
       - name: Publish citation data
+        if: steps.fetch.outputs.ok == 'true'
         working-directory: google_scholar_crawler/results
         run: |
           git init
