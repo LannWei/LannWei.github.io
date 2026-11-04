@@ -1,9 +1,15 @@
 """Fetch the Google Scholar citation count for the homepage badge.
 
-Google Scholar often blocks requests from GitHub Actions runners, so this
-script tries a single lightweight page fetch first, falls back to the
-`scholarly` library, and if both are blocked it exits cleanly without
-publishing (the badge keeps showing the last good value).
+Google Scholar often blocks requests from GitHub Actions runners, and the
+`scholarly` library then retries forever (it swallows ordinary exceptions,
+so in-process timeouts do not stop it). Each attempt therefore runs in its
+own subprocess with a hard time limit:
+
+  1. one plain request to the public profile page;
+  2. the `scholarly` library as a fallback.
+
+If both are blocked the script exits cleanly without publishing, so the
+badge keeps showing the last good value.
 
 Writes results/gs_data.json and results/gs_data_shieldsio.json, and sets the
 step output `ok=true|false` for the workflow.
@@ -12,7 +18,7 @@ import json
 import logging
 import os
 import re
-import signal
+import subprocess
 import sys
 import urllib.request
 from datetime import datetime, timezone
@@ -22,13 +28,6 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 scholar_id = os.environ.get("GOOGLE_SCHOLAR_ID", "").strip()
 if not scholar_id:
     raise SystemExit("Set GOOGLE_SCHOLAR_ID before running the crawler.")
-
-
-def set_output(ok: bool) -> None:
-    path = os.environ.get("GITHUB_OUTPUT")
-    if path:
-        with open(path, "a") as f:
-            f.write(f"ok={'true' if ok else 'false'}\n")
 
 
 def from_profile_page():
@@ -68,32 +67,43 @@ def from_scholarly():
     }
 
 
-class AttemptTimeout(Exception):
-    pass
+FETCHERS = {"profile_page": from_profile_page, "scholarly": from_scholarly}
+
+# Child mode: run one fetcher and print its result as JSON on the last line.
+if len(sys.argv) == 3 and sys.argv[1] == "--attempt":
+    print(json.dumps(FETCHERS[sys.argv[2]]()))
+    sys.exit(0)
 
 
-def _on_alarm(signum, frame):
-    raise AttemptTimeout("gave up after the time limit")
+def run_attempt(name: str, limit: int) -> dict:
+    try:
+        proc = subprocess.run(
+            [sys.executable, os.path.abspath(__file__), "--attempt", name],
+            capture_output=True, text=True, timeout=limit,
+        )
+    except subprocess.TimeoutExpired:  # the child is killed by subprocess.run
+        raise RuntimeError(f"gave up after {limit}s")
+    if proc.returncode != 0:
+        lines = (proc.stderr or proc.stdout or "no output").strip().splitlines()
+        raise RuntimeError(lines[-1] if lines else f"exit code {proc.returncode}")
+    return json.loads(proc.stdout.strip().splitlines()[-1])
 
 
-# scholarly keeps retrying forever when Scholar shows a captcha, so every
-# attempt gets a hard wall-clock limit (seconds).
-ATTEMPTS = ((from_profile_page, 45), (from_scholarly, 100))
+def set_output(ok: bool) -> None:
+    path = os.environ.get("GITHUB_OUTPUT")
+    if path:
+        with open(path, "a") as f:
+            f.write(f"ok={'true' if ok else 'false'}\n")
+
 
 summary = None
-signal.signal(signal.SIGALRM, _on_alarm)
-for fetch, limit in ATTEMPTS:
-    logging.info("Trying %s (limit %ss)", fetch.__name__, limit)
-    signal.alarm(limit)
+for name, limit in (("profile_page", 45), ("scholarly", 100)):
+    logging.info("Trying %s (limit %ss)", name, limit)
     try:
-        summary = fetch()
+        summary = run_attempt(name, limit)
         break
-    except BaseException as e:  # blocked, captcha, network error, time limit...
-        if isinstance(e, KeyboardInterrupt):
-            raise
-        logging.warning("%s failed: %s", fetch.__name__, e)
-    finally:
-        signal.alarm(0)
+    except Exception as e:  # blocked, captcha, network error, time limit...
+        logging.warning("%s failed: %s", name, e)
 
 if summary is None:
     logging.warning("Google Scholar blocked every attempt; keeping the previous badge value.")
