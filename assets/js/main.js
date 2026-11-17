@@ -55,6 +55,27 @@
   window.addEventListener("hashchange", revealTarget);
   revealTarget();
 
+  /* ---------- Live Hugging Face download counts ---------- */
+  // The number written in the HTML is the fallback. It is replaced with the
+  // all-time count from the public Hugging Face API whenever that answers.
+  var hfBadges = Array.prototype.slice.call(document.querySelectorAll("[data-hf-dataset]"));
+  var hfIds = {};
+  hfBadges.forEach(function (el) { hfIds[el.getAttribute("data-hf-dataset")] = true; });
+  Object.keys(hfIds).forEach(function (id) {
+    if (!window.fetch) return;
+    fetch("https://huggingface.co/api/datasets/" + id + "?expand%5B%5D=downloadsAllTime")
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        var n = data && data.downloadsAllTime;
+        if (typeof n !== "number" || n <= 0) return;
+        hfBadges.forEach(function (el) {
+          var count = el.querySelector(".hf-count");
+          if (count && el.getAttribute("data-hf-dataset") === id) count.textContent = n.toLocaleString("en-US");
+        });
+      })
+      .catch(function () { /* keep the number written in the HTML */ });
+  });
+
   /* ---------- Highlight the current section in the masthead ---------- */
   var navLinks = Array.prototype.slice.call(document.querySelectorAll(".masthead__menu a[href^='#']"));
   var sections = navLinks
